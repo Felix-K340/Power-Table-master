@@ -17,3 +17,4 @@ Mathematica 10 的新功能
 
 
 本例程序在mathematica12.3.1平台运行
+![](Power-Table/创建加法和乘法表_ Mathematica 10 的新功能.jpg)
