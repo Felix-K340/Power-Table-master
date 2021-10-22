@@ -1,0 +1,2790 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     81935,       2782]
+NotebookOptionsPosition[     80626,       2750]
+NotebookOutlinePosition[     81067,       2768]
+CellTagsIndexPosition[     81024,       2765]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(", 
+   RowBox[{"times", "=", 
+    RowBox[{"Internal`PartitionRagged", "[", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"times", "=", 
+        RowBox[{"Table", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{
+            RowBox[{"Inactive", "[", "Times", "]"}], "[", 
+            RowBox[{"a", " ", ",", "a"}], "]"}], "==", 
+           RowBox[{"a", " ", "a"}]}], ",", 
+          RowBox[{"{", 
+           RowBox[{"a", ",", "100"}], "}"}]}], "]"}]}], ")"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+       "10", ",", "10", ",", "10", ",", "10", ",", "10", ",", "10", ",", "10",
+         ",", "10", ",", "10", ",", "10"}], "}"}]}], "]"}]}], ")"}], "//", 
+  "TableForm"}]], "Input",
+ CellChangeTimes->{{3.843791314851376*^9, 3.8437913735662518`*^9}},
+ CellLabel->
+  "In[115]:=",ExpressionUUID->"62f7b6a8-c0fd-4c7e-95eb-fb7aae772bde"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {
+     RowBox[{
+      RowBox[{"1", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "1"}], "\[Equal]", "1"}], 
+     RowBox[{
+      RowBox[{"2", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "2"}], "\[Equal]", "4"}], 
+     RowBox[{
+      RowBox[{"3", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "3"}], "\[Equal]", "9"}], 
+     RowBox[{
+      RowBox[{"4", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "4"}], "\[Equal]", "16"}], 
+     RowBox[{
+      RowBox[{"5", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "5"}], "\[Equal]", "25"}], 
+     RowBox[{
+      RowBox[{"6", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "6"}], "\[Equal]", "36"}], 
+     RowBox[{
+      RowBox[{"7", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "7"}], "\[Equal]", "49"}], 
+     RowBox[{
+      RowBox[{"8", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "8"}], "\[Equal]", "64"}], 
+     RowBox[{
+      RowBox[{"9", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "9"}], "\[Equal]", "81"}], 
+     RowBox[{
+      RowBox[{"10", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "10"}], "\[Equal]", "100"}]},
+    {
+     RowBox[{
+      RowBox[{"11", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "11"}], "\[Equal]", "121"}], 
+     RowBox[{
+      RowBox[{"12", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "12"}], "\[Equal]", "144"}], 
+     RowBox[{
+      RowBox[{"13", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "13"}], "\[Equal]", "169"}], 
+     RowBox[{
+      RowBox[{"14", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "14"}], "\[Equal]", "196"}], 
+     RowBox[{
+      RowBox[{"15", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "15"}], "\[Equal]", "225"}], 
+     RowBox[{
+      RowBox[{"16", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "16"}], "\[Equal]", "256"}], 
+     RowBox[{
+      RowBox[{"17", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "17"}], "\[Equal]", "289"}], 
+     RowBox[{
+      RowBox[{"18", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "18"}], "\[Equal]", "324"}], 
+     RowBox[{
+      RowBox[{"19", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "19"}], "\[Equal]", "361"}], 
+     RowBox[{
+      RowBox[{"20", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "20"}], "\[Equal]", "400"}]},
+    {
+     RowBox[{
+      RowBox[{"21", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "21"}], "\[Equal]", "441"}], 
+     RowBox[{
+      RowBox[{"22", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "22"}], "\[Equal]", "484"}], 
+     RowBox[{
+      RowBox[{"23", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "23"}], "\[Equal]", "529"}], 
+     RowBox[{
+      RowBox[{"24", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "24"}], "\[Equal]", "576"}], 
+     RowBox[{
+      RowBox[{"25", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "25"}], "\[Equal]", "625"}], 
+     RowBox[{
+      RowBox[{"26", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "26"}], "\[Equal]", "676"}], 
+     RowBox[{
+      RowBox[{"27", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "27"}], "\[Equal]", "729"}], 
+     RowBox[{
+      RowBox[{"28", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "28"}], "\[Equal]", "784"}], 
+     RowBox[{
+      RowBox[{"29", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "29"}], "\[Equal]", "841"}], 
+     RowBox[{
+      RowBox[{"30", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "30"}], "\[Equal]", "900"}]},
+    {
+     RowBox[{
+      RowBox[{"31", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "31"}], "\[Equal]", "961"}], 
+     RowBox[{
+      RowBox[{"32", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "32"}], "\[Equal]", "1024"}], 
+     RowBox[{
+      RowBox[{"33", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "33"}], "\[Equal]", "1089"}], 
+     RowBox[{
+      RowBox[{"34", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "34"}], "\[Equal]", "1156"}], 
+     RowBox[{
+      RowBox[{"35", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "35"}], "\[Equal]", "1225"}], 
+     RowBox[{
+      RowBox[{"36", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "36"}], "\[Equal]", "1296"}], 
+     RowBox[{
+      RowBox[{"37", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "37"}], "\[Equal]", "1369"}], 
+     RowBox[{
+      RowBox[{"38", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "38"}], "\[Equal]", "1444"}], 
+     RowBox[{
+      RowBox[{"39", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "39"}], "\[Equal]", "1521"}], 
+     RowBox[{
+      RowBox[{"40", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "40"}], "\[Equal]", "1600"}]},
+    {
+     RowBox[{
+      RowBox[{"41", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "41"}], "\[Equal]", "1681"}], 
+     RowBox[{
+      RowBox[{"42", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "42"}], "\[Equal]", "1764"}], 
+     RowBox[{
+      RowBox[{"43", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "43"}], "\[Equal]", "1849"}], 
+     RowBox[{
+      RowBox[{"44", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "44"}], "\[Equal]", "1936"}], 
+     RowBox[{
+      RowBox[{"45", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "45"}], "\[Equal]", "2025"}], 
+     RowBox[{
+      RowBox[{"46", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "46"}], "\[Equal]", "2116"}], 
+     RowBox[{
+      RowBox[{"47", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "47"}], "\[Equal]", "2209"}], 
+     RowBox[{
+      RowBox[{"48", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "48"}], "\[Equal]", "2304"}], 
+     RowBox[{
+      RowBox[{"49", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "49"}], "\[Equal]", "2401"}], 
+     RowBox[{
+      RowBox[{"50", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "50"}], "\[Equal]", "2500"}]},
+    {
+     RowBox[{
+      RowBox[{"51", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "51"}], "\[Equal]", "2601"}], 
+     RowBox[{
+      RowBox[{"52", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "52"}], "\[Equal]", "2704"}], 
+     RowBox[{
+      RowBox[{"53", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "53"}], "\[Equal]", "2809"}], 
+     RowBox[{
+      RowBox[{"54", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "54"}], "\[Equal]", "2916"}], 
+     RowBox[{
+      RowBox[{"55", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "55"}], "\[Equal]", "3025"}], 
+     RowBox[{
+      RowBox[{"56", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "56"}], "\[Equal]", "3136"}], 
+     RowBox[{
+      RowBox[{"57", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "57"}], "\[Equal]", "3249"}], 
+     RowBox[{
+      RowBox[{"58", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "58"}], "\[Equal]", "3364"}], 
+     RowBox[{
+      RowBox[{"59", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "59"}], "\[Equal]", "3481"}], 
+     RowBox[{
+      RowBox[{"60", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "60"}], "\[Equal]", "3600"}]},
+    {
+     RowBox[{
+      RowBox[{"61", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "61"}], "\[Equal]", "3721"}], 
+     RowBox[{
+      RowBox[{"62", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "62"}], "\[Equal]", "3844"}], 
+     RowBox[{
+      RowBox[{"63", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "63"}], "\[Equal]", "3969"}], 
+     RowBox[{
+      RowBox[{"64", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "64"}], "\[Equal]", "4096"}], 
+     RowBox[{
+      RowBox[{"65", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "65"}], "\[Equal]", "4225"}], 
+     RowBox[{
+      RowBox[{"66", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "66"}], "\[Equal]", "4356"}], 
+     RowBox[{
+      RowBox[{"67", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "67"}], "\[Equal]", "4489"}], 
+     RowBox[{
+      RowBox[{"68", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "68"}], "\[Equal]", "4624"}], 
+     RowBox[{
+      RowBox[{"69", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "69"}], "\[Equal]", "4761"}], 
+     RowBox[{
+      RowBox[{"70", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "70"}], "\[Equal]", "4900"}]},
+    {
+     RowBox[{
+      RowBox[{"71", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "71"}], "\[Equal]", "5041"}], 
+     RowBox[{
+      RowBox[{"72", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "72"}], "\[Equal]", "5184"}], 
+     RowBox[{
+      RowBox[{"73", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "73"}], "\[Equal]", "5329"}], 
+     RowBox[{
+      RowBox[{"74", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "74"}], "\[Equal]", "5476"}], 
+     RowBox[{
+      RowBox[{"75", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "75"}], "\[Equal]", "5625"}], 
+     RowBox[{
+      RowBox[{"76", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "76"}], "\[Equal]", "5776"}], 
+     RowBox[{
+      RowBox[{"77", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "77"}], "\[Equal]", "5929"}], 
+     RowBox[{
+      RowBox[{"78", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "78"}], "\[Equal]", "6084"}], 
+     RowBox[{
+      RowBox[{"79", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "79"}], "\[Equal]", "6241"}], 
+     RowBox[{
+      RowBox[{"80", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "80"}], "\[Equal]", "6400"}]},
+    {
+     RowBox[{
+      RowBox[{"81", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "81"}], "\[Equal]", "6561"}], 
+     RowBox[{
+      RowBox[{"82", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "82"}], "\[Equal]", "6724"}], 
+     RowBox[{
+      RowBox[{"83", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "83"}], "\[Equal]", "6889"}], 
+     RowBox[{
+      RowBox[{"84", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "84"}], "\[Equal]", "7056"}], 
+     RowBox[{
+      RowBox[{"85", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "85"}], "\[Equal]", "7225"}], 
+     RowBox[{
+      RowBox[{"86", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "86"}], "\[Equal]", "7396"}], 
+     RowBox[{
+      RowBox[{"87", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "87"}], "\[Equal]", "7569"}], 
+     RowBox[{
+      RowBox[{"88", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "88"}], "\[Equal]", "7744"}], 
+     RowBox[{
+      RowBox[{"89", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "89"}], "\[Equal]", "7921"}], 
+     RowBox[{
+      RowBox[{"90", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "90"}], "\[Equal]", "8100"}]},
+    {
+     RowBox[{
+      RowBox[{"91", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "91"}], "\[Equal]", "8281"}], 
+     RowBox[{
+      RowBox[{"92", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "92"}], "\[Equal]", "8464"}], 
+     RowBox[{
+      RowBox[{"93", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "93"}], "\[Equal]", "8649"}], 
+     RowBox[{
+      RowBox[{"94", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "94"}], "\[Equal]", "8836"}], 
+     RowBox[{
+      RowBox[{"95", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "95"}], "\[Equal]", "9025"}], 
+     RowBox[{
+      RowBox[{"96", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "96"}], "\[Equal]", "9216"}], 
+     RowBox[{
+      RowBox[{"97", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "97"}], "\[Equal]", "9409"}], 
+     RowBox[{
+      RowBox[{"98", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "98"}], "\[Equal]", "9604"}], 
+     RowBox[{
+      RowBox[{"99", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "99"}], "\[Equal]", "9801"}], 
+     RowBox[{
+      RowBox[{"100", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "100"}], "\[Equal]", "10000"}]}
+   },
+   GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+   GridBoxSpacings->{"Columns" -> {
+       Offset[0.27999999999999997`], {
+        Offset[2.0999999999999996`]}, 
+       Offset[0.27999999999999997`]}, "Rows" -> {
+       Offset[0.2], {
+        Offset[0.4]}, 
+       Offset[0.2]}}],
+  Function[BoxForm`e$, 
+   TableForm[BoxForm`e$]]]], "Output",
+ CellChangeTimes->{3.8437913374966717`*^9, 3.843791376332945*^9, 
+  3.8437997595745173`*^9},
+ CellLabel->
+  "Out[115]//TableForm=",ExpressionUUID->"d267387a-adc2-4688-92ce-\
+4f2d934d9d54"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Grid", "[", 
+   RowBox[{
+    RowBox[{"Join", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"Item", "[", 
+          RowBox[{
+           RowBox[{"Style", "[", 
+            RowBox[{
+            "\"\<1\:5230100\:4e58\:65b9\:8868 Power table from 1 to 100\>\"", 
+             ",", 
+             RowBox[{"FontSize", "\[Rule]", "18"}]}], "]"}], ",", 
+           RowBox[{"Alignment", "\[Rule]", "Center"}], ",", 
+           RowBox[{"Background", "\[Rule]", 
+            RowBox[{"GrayLevel", "[", ".9", "]"}]}]}], "]"}], ",", 
+         "SpanFromLeft"}], "}"}], "}"}], ",", "times"}], "]"}], ",", 
+    RowBox[{"Dividers", "\[Rule]", "All"}], ",", 
+    RowBox[{"ItemSize", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"Automatic", ",", "1.6"}], "}"}]}]}], "]"}], "//", 
+  "TraditionalForm"}]], "Input",
+ CellLabel->
+  "In[116]:=",ExpressionUUID->"f852debb-7e64-4d3b-9280-bd30a4e6a8b8"],
+
+Cell[BoxData[
+ FormBox[
+  TagBox[GridBox[{
+     {
+      ItemBox[
+       StyleBox["\<\"1\:5230100\:4e58\:65b9\:8868 Power table from 1 to 100\"\
+\>",
+        StripOnInput->False,
+        FontSize->18],
+       Alignment->Center,
+       Background->GrayLevel[0.9],
+       StripOnInput->False], "\[SpanFromLeft]", "\[SpanFromLeft]", 
+      "\[SpanFromLeft]", "\[SpanFromLeft]", "\[SpanFromLeft]", 
+      "\[SpanFromLeft]", "\[SpanFromLeft]", "\[SpanFromLeft]", 
+      "\[SpanFromLeft]"},
+     {
+      RowBox[{
+       RowBox[{"1", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "1"}], "\[LongEqual]", "1"}], 
+      RowBox[{
+       RowBox[{"2", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "2"}], "\[LongEqual]", "4"}], 
+      RowBox[{
+       RowBox[{"3", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "3"}], "\[LongEqual]", "9"}], 
+      RowBox[{
+       RowBox[{"4", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "4"}], "\[LongEqual]", "16"}], 
+      RowBox[{
+       RowBox[{"5", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "5"}], "\[LongEqual]", "25"}], 
+      RowBox[{
+       RowBox[{"6", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "6"}], "\[LongEqual]", "36"}], 
+      RowBox[{
+       RowBox[{"7", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "7"}], "\[LongEqual]", "49"}], 
+      RowBox[{
+       RowBox[{"8", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "8"}], "\[LongEqual]", "64"}], 
+      RowBox[{
+       RowBox[{"9", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "9"}], "\[LongEqual]", "81"}], 
+      RowBox[{
+       RowBox[{"10", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "10"}], "\[LongEqual]", "100"}]},
+     {
+      RowBox[{
+       RowBox[{"11", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "11"}], "\[LongEqual]", "121"}], 
+      RowBox[{
+       RowBox[{"12", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "12"}], "\[LongEqual]", "144"}], 
+      RowBox[{
+       RowBox[{"13", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "13"}], "\[LongEqual]", "169"}], 
+      RowBox[{
+       RowBox[{"14", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "14"}], "\[LongEqual]", "196"}], 
+      RowBox[{
+       RowBox[{"15", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "15"}], "\[LongEqual]", "225"}], 
+      RowBox[{
+       RowBox[{"16", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "16"}], "\[LongEqual]", "256"}], 
+      RowBox[{
+       RowBox[{"17", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "17"}], "\[LongEqual]", "289"}], 
+      RowBox[{
+       RowBox[{"18", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "18"}], "\[LongEqual]", "324"}], 
+      RowBox[{
+       RowBox[{"19", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "19"}], "\[LongEqual]", "361"}], 
+      RowBox[{
+       RowBox[{"20", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "20"}], "\[LongEqual]", "400"}]},
+     {
+      RowBox[{
+       RowBox[{"21", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "21"}], "\[LongEqual]", "441"}], 
+      RowBox[{
+       RowBox[{"22", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "22"}], "\[LongEqual]", "484"}], 
+      RowBox[{
+       RowBox[{"23", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "23"}], "\[LongEqual]", "529"}], 
+      RowBox[{
+       RowBox[{"24", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "24"}], "\[LongEqual]", "576"}], 
+      RowBox[{
+       RowBox[{"25", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "25"}], "\[LongEqual]", "625"}], 
+      RowBox[{
+       RowBox[{"26", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "26"}], "\[LongEqual]", "676"}], 
+      RowBox[{
+       RowBox[{"27", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "27"}], "\[LongEqual]", "729"}], 
+      RowBox[{
+       RowBox[{"28", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "28"}], "\[LongEqual]", "784"}], 
+      RowBox[{
+       RowBox[{"29", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "29"}], "\[LongEqual]", "841"}], 
+      RowBox[{
+       RowBox[{"30", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "30"}], "\[LongEqual]", "900"}]},
+     {
+      RowBox[{
+       RowBox[{"31", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "31"}], "\[LongEqual]", "961"}], 
+      RowBox[{
+       RowBox[{"32", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "32"}], "\[LongEqual]", "1024"}], 
+      RowBox[{
+       RowBox[{"33", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "33"}], "\[LongEqual]", "1089"}], 
+      RowBox[{
+       RowBox[{"34", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "34"}], "\[LongEqual]", "1156"}], 
+      RowBox[{
+       RowBox[{"35", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "35"}], "\[LongEqual]", "1225"}], 
+      RowBox[{
+       RowBox[{"36", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "36"}], "\[LongEqual]", "1296"}], 
+      RowBox[{
+       RowBox[{"37", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "37"}], "\[LongEqual]", "1369"}], 
+      RowBox[{
+       RowBox[{"38", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "38"}], "\[LongEqual]", "1444"}], 
+      RowBox[{
+       RowBox[{"39", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "39"}], "\[LongEqual]", "1521"}], 
+      RowBox[{
+       RowBox[{"40", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "40"}], "\[LongEqual]", "1600"}]},
+     {
+      RowBox[{
+       RowBox[{"41", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "41"}], "\[LongEqual]", "1681"}], 
+      RowBox[{
+       RowBox[{"42", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "42"}], "\[LongEqual]", "1764"}], 
+      RowBox[{
+       RowBox[{"43", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "43"}], "\[LongEqual]", "1849"}], 
+      RowBox[{
+       RowBox[{"44", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "44"}], "\[LongEqual]", "1936"}], 
+      RowBox[{
+       RowBox[{"45", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "45"}], "\[LongEqual]", "2025"}], 
+      RowBox[{
+       RowBox[{"46", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "46"}], "\[LongEqual]", "2116"}], 
+      RowBox[{
+       RowBox[{"47", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "47"}], "\[LongEqual]", "2209"}], 
+      RowBox[{
+       RowBox[{"48", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "48"}], "\[LongEqual]", "2304"}], 
+      RowBox[{
+       RowBox[{"49", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "49"}], "\[LongEqual]", "2401"}], 
+      RowBox[{
+       RowBox[{"50", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "50"}], "\[LongEqual]", "2500"}]},
+     {
+      RowBox[{
+       RowBox[{"51", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "51"}], "\[LongEqual]", "2601"}], 
+      RowBox[{
+       RowBox[{"52", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "52"}], "\[LongEqual]", "2704"}], 
+      RowBox[{
+       RowBox[{"53", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "53"}], "\[LongEqual]", "2809"}], 
+      RowBox[{
+       RowBox[{"54", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "54"}], "\[LongEqual]", "2916"}], 
+      RowBox[{
+       RowBox[{"55", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "55"}], "\[LongEqual]", "3025"}], 
+      RowBox[{
+       RowBox[{"56", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "56"}], "\[LongEqual]", "3136"}], 
+      RowBox[{
+       RowBox[{"57", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "57"}], "\[LongEqual]", "3249"}], 
+      RowBox[{
+       RowBox[{"58", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "58"}], "\[LongEqual]", "3364"}], 
+      RowBox[{
+       RowBox[{"59", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "59"}], "\[LongEqual]", "3481"}], 
+      RowBox[{
+       RowBox[{"60", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "60"}], "\[LongEqual]", "3600"}]},
+     {
+      RowBox[{
+       RowBox[{"61", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "61"}], "\[LongEqual]", "3721"}], 
+      RowBox[{
+       RowBox[{"62", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "62"}], "\[LongEqual]", "3844"}], 
+      RowBox[{
+       RowBox[{"63", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "63"}], "\[LongEqual]", "3969"}], 
+      RowBox[{
+       RowBox[{"64", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "64"}], "\[LongEqual]", "4096"}], 
+      RowBox[{
+       RowBox[{"65", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "65"}], "\[LongEqual]", "4225"}], 
+      RowBox[{
+       RowBox[{"66", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "66"}], "\[LongEqual]", "4356"}], 
+      RowBox[{
+       RowBox[{"67", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "67"}], "\[LongEqual]", "4489"}], 
+      RowBox[{
+       RowBox[{"68", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "68"}], "\[LongEqual]", "4624"}], 
+      RowBox[{
+       RowBox[{"69", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "69"}], "\[LongEqual]", "4761"}], 
+      RowBox[{
+       RowBox[{"70", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "70"}], "\[LongEqual]", "4900"}]},
+     {
+      RowBox[{
+       RowBox[{"71", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "71"}], "\[LongEqual]", "5041"}], 
+      RowBox[{
+       RowBox[{"72", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "72"}], "\[LongEqual]", "5184"}], 
+      RowBox[{
+       RowBox[{"73", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "73"}], "\[LongEqual]", "5329"}], 
+      RowBox[{
+       RowBox[{"74", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "74"}], "\[LongEqual]", "5476"}], 
+      RowBox[{
+       RowBox[{"75", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "75"}], "\[LongEqual]", "5625"}], 
+      RowBox[{
+       RowBox[{"76", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "76"}], "\[LongEqual]", "5776"}], 
+      RowBox[{
+       RowBox[{"77", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "77"}], "\[LongEqual]", "5929"}], 
+      RowBox[{
+       RowBox[{"78", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "78"}], "\[LongEqual]", "6084"}], 
+      RowBox[{
+       RowBox[{"79", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "79"}], "\[LongEqual]", "6241"}], 
+      RowBox[{
+       RowBox[{"80", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "80"}], "\[LongEqual]", "6400"}]},
+     {
+      RowBox[{
+       RowBox[{"81", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "81"}], "\[LongEqual]", "6561"}], 
+      RowBox[{
+       RowBox[{"82", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "82"}], "\[LongEqual]", "6724"}], 
+      RowBox[{
+       RowBox[{"83", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "83"}], "\[LongEqual]", "6889"}], 
+      RowBox[{
+       RowBox[{"84", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "84"}], "\[LongEqual]", "7056"}], 
+      RowBox[{
+       RowBox[{"85", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "85"}], "\[LongEqual]", "7225"}], 
+      RowBox[{
+       RowBox[{"86", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "86"}], "\[LongEqual]", "7396"}], 
+      RowBox[{
+       RowBox[{"87", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "87"}], "\[LongEqual]", "7569"}], 
+      RowBox[{
+       RowBox[{"88", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "88"}], "\[LongEqual]", "7744"}], 
+      RowBox[{
+       RowBox[{"89", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "89"}], "\[LongEqual]", "7921"}], 
+      RowBox[{
+       RowBox[{"90", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "90"}], "\[LongEqual]", "8100"}]},
+     {
+      RowBox[{
+       RowBox[{"91", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "91"}], "\[LongEqual]", "8281"}], 
+      RowBox[{
+       RowBox[{"92", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "92"}], "\[LongEqual]", "8464"}], 
+      RowBox[{
+       RowBox[{"93", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "93"}], "\[LongEqual]", "8649"}], 
+      RowBox[{
+       RowBox[{"94", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "94"}], "\[LongEqual]", "8836"}], 
+      RowBox[{
+       RowBox[{"95", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "95"}], "\[LongEqual]", "9025"}], 
+      RowBox[{
+       RowBox[{"96", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "96"}], "\[LongEqual]", "9216"}], 
+      RowBox[{
+       RowBox[{"97", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "97"}], "\[LongEqual]", "9409"}], 
+      RowBox[{
+       RowBox[{"98", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "98"}], "\[LongEqual]", "9604"}], 
+      RowBox[{
+       RowBox[{"99", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "99"}], "\[LongEqual]", "9801"}], 
+      RowBox[{
+       RowBox[{"100", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"InactiveTraditional",
+         SyntaxForm->"a*b"], "100"}], "\[LongEqual]", "10000"}]}
+    },
+    AutoDelete->False,
+    GridBoxDividers->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{1.6}}}],
+   "Grid"], TraditionalForm]], "Output",
+ CellChangeTimes->{3.8437914060680003`*^9, 3.8437997660839806`*^9},
+ CellLabel->
+  "Out[116]//TraditionalForm=",ExpressionUUID->"d078883a-c6b1-4c81-9c6c-\
+e631146cda5d"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"\:5176\:4e2d\:5411\:91cftimes\:7ed3\:6784", "\:ff1a"}]], "Input",
+ CellChangeTimes->{{3.843791568589942*^9, 3.8437915933957825`*^9}, 
+   3.8437916237001314`*^9},ExpressionUUID->"80f4599a-6f82-4749-a601-\
+e2665d96576e"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(", 
+   RowBox[{"times", "=", 
+    RowBox[{"Table", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{"Inactive", "[", "Times", "]"}], "[", 
+        RowBox[{"a", " ", ",", "a"}], "]"}], "==", 
+       RowBox[{"a", " ", "a"}]}], ",", 
+      RowBox[{"{", 
+       RowBox[{"a", ",", "100"}], "}"}]}], "]"}]}], ")"}], "//", 
+  "TableForm"}]], "Input",
+ CellChangeTimes->{{3.8437914923226423`*^9, 3.8437915381626263`*^9}, {
+  3.84379160802556*^9, 3.8437916121881046`*^9}},
+ CellLabel->
+  "In[109]:=",ExpressionUUID->"7988f418-c9f1-43ab-b9a0-fdbdc997d767"],
+
+Cell[BoxData[
+ TagBox[
+  TagBox[GridBox[{
+     {
+      RowBox[{
+       RowBox[{"1", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "1"}], "\[Equal]", "1"}]},
+     {
+      RowBox[{
+       RowBox[{"2", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "2"}], "\[Equal]", "4"}]},
+     {
+      RowBox[{
+       RowBox[{"3", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "3"}], "\[Equal]", "9"}]},
+     {
+      RowBox[{
+       RowBox[{"4", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "4"}], "\[Equal]", "16"}]},
+     {
+      RowBox[{
+       RowBox[{"5", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "5"}], "\[Equal]", "25"}]},
+     {
+      RowBox[{
+       RowBox[{"6", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "6"}], "\[Equal]", "36"}]},
+     {
+      RowBox[{
+       RowBox[{"7", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "7"}], "\[Equal]", "49"}]},
+     {
+      RowBox[{
+       RowBox[{"8", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "8"}], "\[Equal]", "64"}]},
+     {
+      RowBox[{
+       RowBox[{"9", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "9"}], "\[Equal]", "81"}]},
+     {
+      RowBox[{
+       RowBox[{"10", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "10"}], "\[Equal]", "100"}]},
+     {
+      RowBox[{
+       RowBox[{"11", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "11"}], "\[Equal]", "121"}]},
+     {
+      RowBox[{
+       RowBox[{"12", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "12"}], "\[Equal]", "144"}]},
+     {
+      RowBox[{
+       RowBox[{"13", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "13"}], "\[Equal]", "169"}]},
+     {
+      RowBox[{
+       RowBox[{"14", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "14"}], "\[Equal]", "196"}]},
+     {
+      RowBox[{
+       RowBox[{"15", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "15"}], "\[Equal]", "225"}]},
+     {
+      RowBox[{
+       RowBox[{"16", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "16"}], "\[Equal]", "256"}]},
+     {
+      RowBox[{
+       RowBox[{"17", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "17"}], "\[Equal]", "289"}]},
+     {
+      RowBox[{
+       RowBox[{"18", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "18"}], "\[Equal]", "324"}]},
+     {
+      RowBox[{
+       RowBox[{"19", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "19"}], "\[Equal]", "361"}]},
+     {
+      RowBox[{
+       RowBox[{"20", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "20"}], "\[Equal]", "400"}]},
+     {
+      RowBox[{
+       RowBox[{"21", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "21"}], "\[Equal]", "441"}]},
+     {
+      RowBox[{
+       RowBox[{"22", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "22"}], "\[Equal]", "484"}]},
+     {
+      RowBox[{
+       RowBox[{"23", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "23"}], "\[Equal]", "529"}]},
+     {
+      RowBox[{
+       RowBox[{"24", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "24"}], "\[Equal]", "576"}]},
+     {
+      RowBox[{
+       RowBox[{"25", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "25"}], "\[Equal]", "625"}]},
+     {
+      RowBox[{
+       RowBox[{"26", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "26"}], "\[Equal]", "676"}]},
+     {
+      RowBox[{
+       RowBox[{"27", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "27"}], "\[Equal]", "729"}]},
+     {
+      RowBox[{
+       RowBox[{"28", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "28"}], "\[Equal]", "784"}]},
+     {
+      RowBox[{
+       RowBox[{"29", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "29"}], "\[Equal]", "841"}]},
+     {
+      RowBox[{
+       RowBox[{"30", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "30"}], "\[Equal]", "900"}]},
+     {
+      RowBox[{
+       RowBox[{"31", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "31"}], "\[Equal]", "961"}]},
+     {
+      RowBox[{
+       RowBox[{"32", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "32"}], "\[Equal]", "1024"}]},
+     {
+      RowBox[{
+       RowBox[{"33", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "33"}], "\[Equal]", "1089"}]},
+     {
+      RowBox[{
+       RowBox[{"34", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "34"}], "\[Equal]", "1156"}]},
+     {
+      RowBox[{
+       RowBox[{"35", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "35"}], "\[Equal]", "1225"}]},
+     {
+      RowBox[{
+       RowBox[{"36", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "36"}], "\[Equal]", "1296"}]},
+     {
+      RowBox[{
+       RowBox[{"37", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "37"}], "\[Equal]", "1369"}]},
+     {
+      RowBox[{
+       RowBox[{"38", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "38"}], "\[Equal]", "1444"}]},
+     {
+      RowBox[{
+       RowBox[{"39", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "39"}], "\[Equal]", "1521"}]},
+     {
+      RowBox[{
+       RowBox[{"40", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "40"}], "\[Equal]", "1600"}]},
+     {
+      RowBox[{
+       RowBox[{"41", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "41"}], "\[Equal]", "1681"}]},
+     {
+      RowBox[{
+       RowBox[{"42", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "42"}], "\[Equal]", "1764"}]},
+     {
+      RowBox[{
+       RowBox[{"43", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "43"}], "\[Equal]", "1849"}]},
+     {
+      RowBox[{
+       RowBox[{"44", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "44"}], "\[Equal]", "1936"}]},
+     {
+      RowBox[{
+       RowBox[{"45", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "45"}], "\[Equal]", "2025"}]},
+     {
+      RowBox[{
+       RowBox[{"46", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "46"}], "\[Equal]", "2116"}]},
+     {
+      RowBox[{
+       RowBox[{"47", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "47"}], "\[Equal]", "2209"}]},
+     {
+      RowBox[{
+       RowBox[{"48", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "48"}], "\[Equal]", "2304"}]},
+     {
+      RowBox[{
+       RowBox[{"49", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "49"}], "\[Equal]", "2401"}]},
+     {
+      RowBox[{
+       RowBox[{"50", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "50"}], "\[Equal]", "2500"}]},
+     {
+      RowBox[{
+       RowBox[{"51", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "51"}], "\[Equal]", "2601"}]},
+     {
+      RowBox[{
+       RowBox[{"52", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "52"}], "\[Equal]", "2704"}]},
+     {
+      RowBox[{
+       RowBox[{"53", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "53"}], "\[Equal]", "2809"}]},
+     {
+      RowBox[{
+       RowBox[{"54", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "54"}], "\[Equal]", "2916"}]},
+     {
+      RowBox[{
+       RowBox[{"55", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "55"}], "\[Equal]", "3025"}]},
+     {
+      RowBox[{
+       RowBox[{"56", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "56"}], "\[Equal]", "3136"}]},
+     {
+      RowBox[{
+       RowBox[{"57", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "57"}], "\[Equal]", "3249"}]},
+     {
+      RowBox[{
+       RowBox[{"58", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "58"}], "\[Equal]", "3364"}]},
+     {
+      RowBox[{
+       RowBox[{"59", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "59"}], "\[Equal]", "3481"}]},
+     {
+      RowBox[{
+       RowBox[{"60", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "60"}], "\[Equal]", "3600"}]},
+     {
+      RowBox[{
+       RowBox[{"61", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "61"}], "\[Equal]", "3721"}]},
+     {
+      RowBox[{
+       RowBox[{"62", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "62"}], "\[Equal]", "3844"}]},
+     {
+      RowBox[{
+       RowBox[{"63", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "63"}], "\[Equal]", "3969"}]},
+     {
+      RowBox[{
+       RowBox[{"64", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "64"}], "\[Equal]", "4096"}]},
+     {
+      RowBox[{
+       RowBox[{"65", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "65"}], "\[Equal]", "4225"}]},
+     {
+      RowBox[{
+       RowBox[{"66", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "66"}], "\[Equal]", "4356"}]},
+     {
+      RowBox[{
+       RowBox[{"67", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "67"}], "\[Equal]", "4489"}]},
+     {
+      RowBox[{
+       RowBox[{"68", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "68"}], "\[Equal]", "4624"}]},
+     {
+      RowBox[{
+       RowBox[{"69", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "69"}], "\[Equal]", "4761"}]},
+     {
+      RowBox[{
+       RowBox[{"70", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "70"}], "\[Equal]", "4900"}]},
+     {
+      RowBox[{
+       RowBox[{"71", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "71"}], "\[Equal]", "5041"}]},
+     {
+      RowBox[{
+       RowBox[{"72", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "72"}], "\[Equal]", "5184"}]},
+     {
+      RowBox[{
+       RowBox[{"73", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "73"}], "\[Equal]", "5329"}]},
+     {
+      RowBox[{
+       RowBox[{"74", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "74"}], "\[Equal]", "5476"}]},
+     {
+      RowBox[{
+       RowBox[{"75", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "75"}], "\[Equal]", "5625"}]},
+     {
+      RowBox[{
+       RowBox[{"76", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "76"}], "\[Equal]", "5776"}]},
+     {
+      RowBox[{
+       RowBox[{"77", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "77"}], "\[Equal]", "5929"}]},
+     {
+      RowBox[{
+       RowBox[{"78", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "78"}], "\[Equal]", "6084"}]},
+     {
+      RowBox[{
+       RowBox[{"79", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "79"}], "\[Equal]", "6241"}]},
+     {
+      RowBox[{
+       RowBox[{"80", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "80"}], "\[Equal]", "6400"}]},
+     {
+      RowBox[{
+       RowBox[{"81", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "81"}], "\[Equal]", "6561"}]},
+     {
+      RowBox[{
+       RowBox[{"82", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "82"}], "\[Equal]", "6724"}]},
+     {
+      RowBox[{
+       RowBox[{"83", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "83"}], "\[Equal]", "6889"}]},
+     {
+      RowBox[{
+       RowBox[{"84", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "84"}], "\[Equal]", "7056"}]},
+     {
+      RowBox[{
+       RowBox[{"85", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "85"}], "\[Equal]", "7225"}]},
+     {
+      RowBox[{
+       RowBox[{"86", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "86"}], "\[Equal]", "7396"}]},
+     {
+      RowBox[{
+       RowBox[{"87", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "87"}], "\[Equal]", "7569"}]},
+     {
+      RowBox[{
+       RowBox[{"88", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "88"}], "\[Equal]", "7744"}]},
+     {
+      RowBox[{
+       RowBox[{"89", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "89"}], "\[Equal]", "7921"}]},
+     {
+      RowBox[{
+       RowBox[{"90", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "90"}], "\[Equal]", "8100"}]},
+     {
+      RowBox[{
+       RowBox[{"91", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "91"}], "\[Equal]", "8281"}]},
+     {
+      RowBox[{
+       RowBox[{"92", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "92"}], "\[Equal]", "8464"}]},
+     {
+      RowBox[{
+       RowBox[{"93", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "93"}], "\[Equal]", "8649"}]},
+     {
+      RowBox[{
+       RowBox[{"94", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "94"}], "\[Equal]", "8836"}]},
+     {
+      RowBox[{
+       RowBox[{"95", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "95"}], "\[Equal]", "9025"}]},
+     {
+      RowBox[{
+       RowBox[{"96", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "96"}], "\[Equal]", "9216"}]},
+     {
+      RowBox[{
+       RowBox[{"97", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "97"}], "\[Equal]", "9409"}]},
+     {
+      RowBox[{
+       RowBox[{"98", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "98"}], "\[Equal]", "9604"}]},
+     {
+      RowBox[{
+       RowBox[{"99", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "99"}], "\[Equal]", "9801"}]},
+     {
+      RowBox[{
+       RowBox[{"100", 
+        TagBox["\[Times]",
+         "InactiveToken",
+         BaseStyle->"Inactive",
+         SyntaxForm->"a*b"], "100"}], "\[Equal]", "10000"}]}
+    },
+    GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.5599999999999999]}, 
+        Offset[0.27999999999999997`]}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}}],
+   Column],
+  Function[BoxForm`e$, 
+   TableForm[BoxForm`e$]]]], "Output",
+ CellChangeTimes->{
+  3.843791484456825*^9, 3.8437915394476423`*^9, {3.8437916085860443`*^9, 
+   3.843791614209096*^9}},
+ CellLabel->
+  "Out[109]//TableForm=",ExpressionUUID->"2a127920-aaa3-4649-9815-\
+5fb4315d8071"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(", 
+   RowBox[{"TakeList", "[", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"times", "=", 
+       RowBox[{"Table", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{
+           RowBox[{"Inactive", "[", "Times", "]"}], "[", 
+           RowBox[{"a", " ", ",", "a"}], "]"}], "==", 
+          RowBox[{"a", " ", "a"}]}], ",", 
+         RowBox[{"{", 
+          RowBox[{"a", ",", "100"}], "}"}]}], "]"}]}], ")"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "10", ",", "10", ",", "10", ",", "10", ",", "10", ",", "10", ",", "10", 
+       ",", "10", ",", "10", ",", "10"}], "}"}]}], "]"}], ")"}], "//", 
+  "TableForm"}]], "Input",
+ CellChangeTimes->{{3.8437996868239713`*^9, 3.8437997128059597`*^9}},
+ CellLabel->
+  "In[113]:=",ExpressionUUID->"6d49d664-ce3a-4a97-9dd1-feef8c4f5746"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {
+     RowBox[{
+      RowBox[{"1", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "1"}], "\[Equal]", "1"}], 
+     RowBox[{
+      RowBox[{"2", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "2"}], "\[Equal]", "4"}], 
+     RowBox[{
+      RowBox[{"3", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "3"}], "\[Equal]", "9"}], 
+     RowBox[{
+      RowBox[{"4", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "4"}], "\[Equal]", "16"}], 
+     RowBox[{
+      RowBox[{"5", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "5"}], "\[Equal]", "25"}], 
+     RowBox[{
+      RowBox[{"6", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "6"}], "\[Equal]", "36"}], 
+     RowBox[{
+      RowBox[{"7", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "7"}], "\[Equal]", "49"}], 
+     RowBox[{
+      RowBox[{"8", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "8"}], "\[Equal]", "64"}], 
+     RowBox[{
+      RowBox[{"9", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "9"}], "\[Equal]", "81"}], 
+     RowBox[{
+      RowBox[{"10", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "10"}], "\[Equal]", "100"}]},
+    {
+     RowBox[{
+      RowBox[{"11", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "11"}], "\[Equal]", "121"}], 
+     RowBox[{
+      RowBox[{"12", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "12"}], "\[Equal]", "144"}], 
+     RowBox[{
+      RowBox[{"13", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "13"}], "\[Equal]", "169"}], 
+     RowBox[{
+      RowBox[{"14", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "14"}], "\[Equal]", "196"}], 
+     RowBox[{
+      RowBox[{"15", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "15"}], "\[Equal]", "225"}], 
+     RowBox[{
+      RowBox[{"16", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "16"}], "\[Equal]", "256"}], 
+     RowBox[{
+      RowBox[{"17", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "17"}], "\[Equal]", "289"}], 
+     RowBox[{
+      RowBox[{"18", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "18"}], "\[Equal]", "324"}], 
+     RowBox[{
+      RowBox[{"19", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "19"}], "\[Equal]", "361"}], 
+     RowBox[{
+      RowBox[{"20", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "20"}], "\[Equal]", "400"}]},
+    {
+     RowBox[{
+      RowBox[{"21", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "21"}], "\[Equal]", "441"}], 
+     RowBox[{
+      RowBox[{"22", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "22"}], "\[Equal]", "484"}], 
+     RowBox[{
+      RowBox[{"23", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "23"}], "\[Equal]", "529"}], 
+     RowBox[{
+      RowBox[{"24", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "24"}], "\[Equal]", "576"}], 
+     RowBox[{
+      RowBox[{"25", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "25"}], "\[Equal]", "625"}], 
+     RowBox[{
+      RowBox[{"26", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "26"}], "\[Equal]", "676"}], 
+     RowBox[{
+      RowBox[{"27", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "27"}], "\[Equal]", "729"}], 
+     RowBox[{
+      RowBox[{"28", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "28"}], "\[Equal]", "784"}], 
+     RowBox[{
+      RowBox[{"29", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "29"}], "\[Equal]", "841"}], 
+     RowBox[{
+      RowBox[{"30", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "30"}], "\[Equal]", "900"}]},
+    {
+     RowBox[{
+      RowBox[{"31", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "31"}], "\[Equal]", "961"}], 
+     RowBox[{
+      RowBox[{"32", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "32"}], "\[Equal]", "1024"}], 
+     RowBox[{
+      RowBox[{"33", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "33"}], "\[Equal]", "1089"}], 
+     RowBox[{
+      RowBox[{"34", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "34"}], "\[Equal]", "1156"}], 
+     RowBox[{
+      RowBox[{"35", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "35"}], "\[Equal]", "1225"}], 
+     RowBox[{
+      RowBox[{"36", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "36"}], "\[Equal]", "1296"}], 
+     RowBox[{
+      RowBox[{"37", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "37"}], "\[Equal]", "1369"}], 
+     RowBox[{
+      RowBox[{"38", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "38"}], "\[Equal]", "1444"}], 
+     RowBox[{
+      RowBox[{"39", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "39"}], "\[Equal]", "1521"}], 
+     RowBox[{
+      RowBox[{"40", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "40"}], "\[Equal]", "1600"}]},
+    {
+     RowBox[{
+      RowBox[{"41", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "41"}], "\[Equal]", "1681"}], 
+     RowBox[{
+      RowBox[{"42", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "42"}], "\[Equal]", "1764"}], 
+     RowBox[{
+      RowBox[{"43", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "43"}], "\[Equal]", "1849"}], 
+     RowBox[{
+      RowBox[{"44", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "44"}], "\[Equal]", "1936"}], 
+     RowBox[{
+      RowBox[{"45", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "45"}], "\[Equal]", "2025"}], 
+     RowBox[{
+      RowBox[{"46", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "46"}], "\[Equal]", "2116"}], 
+     RowBox[{
+      RowBox[{"47", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "47"}], "\[Equal]", "2209"}], 
+     RowBox[{
+      RowBox[{"48", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "48"}], "\[Equal]", "2304"}], 
+     RowBox[{
+      RowBox[{"49", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "49"}], "\[Equal]", "2401"}], 
+     RowBox[{
+      RowBox[{"50", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "50"}], "\[Equal]", "2500"}]},
+    {
+     RowBox[{
+      RowBox[{"51", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "51"}], "\[Equal]", "2601"}], 
+     RowBox[{
+      RowBox[{"52", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "52"}], "\[Equal]", "2704"}], 
+     RowBox[{
+      RowBox[{"53", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "53"}], "\[Equal]", "2809"}], 
+     RowBox[{
+      RowBox[{"54", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "54"}], "\[Equal]", "2916"}], 
+     RowBox[{
+      RowBox[{"55", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "55"}], "\[Equal]", "3025"}], 
+     RowBox[{
+      RowBox[{"56", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "56"}], "\[Equal]", "3136"}], 
+     RowBox[{
+      RowBox[{"57", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "57"}], "\[Equal]", "3249"}], 
+     RowBox[{
+      RowBox[{"58", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "58"}], "\[Equal]", "3364"}], 
+     RowBox[{
+      RowBox[{"59", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "59"}], "\[Equal]", "3481"}], 
+     RowBox[{
+      RowBox[{"60", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "60"}], "\[Equal]", "3600"}]},
+    {
+     RowBox[{
+      RowBox[{"61", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "61"}], "\[Equal]", "3721"}], 
+     RowBox[{
+      RowBox[{"62", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "62"}], "\[Equal]", "3844"}], 
+     RowBox[{
+      RowBox[{"63", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "63"}], "\[Equal]", "3969"}], 
+     RowBox[{
+      RowBox[{"64", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "64"}], "\[Equal]", "4096"}], 
+     RowBox[{
+      RowBox[{"65", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "65"}], "\[Equal]", "4225"}], 
+     RowBox[{
+      RowBox[{"66", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "66"}], "\[Equal]", "4356"}], 
+     RowBox[{
+      RowBox[{"67", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "67"}], "\[Equal]", "4489"}], 
+     RowBox[{
+      RowBox[{"68", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "68"}], "\[Equal]", "4624"}], 
+     RowBox[{
+      RowBox[{"69", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "69"}], "\[Equal]", "4761"}], 
+     RowBox[{
+      RowBox[{"70", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "70"}], "\[Equal]", "4900"}]},
+    {
+     RowBox[{
+      RowBox[{"71", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "71"}], "\[Equal]", "5041"}], 
+     RowBox[{
+      RowBox[{"72", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "72"}], "\[Equal]", "5184"}], 
+     RowBox[{
+      RowBox[{"73", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "73"}], "\[Equal]", "5329"}], 
+     RowBox[{
+      RowBox[{"74", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "74"}], "\[Equal]", "5476"}], 
+     RowBox[{
+      RowBox[{"75", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "75"}], "\[Equal]", "5625"}], 
+     RowBox[{
+      RowBox[{"76", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "76"}], "\[Equal]", "5776"}], 
+     RowBox[{
+      RowBox[{"77", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "77"}], "\[Equal]", "5929"}], 
+     RowBox[{
+      RowBox[{"78", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "78"}], "\[Equal]", "6084"}], 
+     RowBox[{
+      RowBox[{"79", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "79"}], "\[Equal]", "6241"}], 
+     RowBox[{
+      RowBox[{"80", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "80"}], "\[Equal]", "6400"}]},
+    {
+     RowBox[{
+      RowBox[{"81", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "81"}], "\[Equal]", "6561"}], 
+     RowBox[{
+      RowBox[{"82", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "82"}], "\[Equal]", "6724"}], 
+     RowBox[{
+      RowBox[{"83", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "83"}], "\[Equal]", "6889"}], 
+     RowBox[{
+      RowBox[{"84", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "84"}], "\[Equal]", "7056"}], 
+     RowBox[{
+      RowBox[{"85", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "85"}], "\[Equal]", "7225"}], 
+     RowBox[{
+      RowBox[{"86", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "86"}], "\[Equal]", "7396"}], 
+     RowBox[{
+      RowBox[{"87", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "87"}], "\[Equal]", "7569"}], 
+     RowBox[{
+      RowBox[{"88", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "88"}], "\[Equal]", "7744"}], 
+     RowBox[{
+      RowBox[{"89", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "89"}], "\[Equal]", "7921"}], 
+     RowBox[{
+      RowBox[{"90", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "90"}], "\[Equal]", "8100"}]},
+    {
+     RowBox[{
+      RowBox[{"91", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "91"}], "\[Equal]", "8281"}], 
+     RowBox[{
+      RowBox[{"92", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "92"}], "\[Equal]", "8464"}], 
+     RowBox[{
+      RowBox[{"93", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "93"}], "\[Equal]", "8649"}], 
+     RowBox[{
+      RowBox[{"94", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "94"}], "\[Equal]", "8836"}], 
+     RowBox[{
+      RowBox[{"95", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "95"}], "\[Equal]", "9025"}], 
+     RowBox[{
+      RowBox[{"96", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "96"}], "\[Equal]", "9216"}], 
+     RowBox[{
+      RowBox[{"97", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "97"}], "\[Equal]", "9409"}], 
+     RowBox[{
+      RowBox[{"98", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "98"}], "\[Equal]", "9604"}], 
+     RowBox[{
+      RowBox[{"99", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "99"}], "\[Equal]", "9801"}], 
+     RowBox[{
+      RowBox[{"100", 
+       TagBox["\[Times]",
+        "InactiveToken",
+        BaseStyle->"Inactive",
+        SyntaxForm->"a*b"], "100"}], "\[Equal]", "10000"}]}
+   },
+   GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+   GridBoxSpacings->{"Columns" -> {
+       Offset[0.27999999999999997`], {
+        Offset[2.0999999999999996`]}, 
+       Offset[0.27999999999999997`]}, "Rows" -> {
+       Offset[0.2], {
+        Offset[0.4]}, 
+       Offset[0.2]}}],
+  Function[BoxForm`e$, 
+   TableForm[BoxForm`e$]]]], "Output",
+ CellChangeTimes->{3.843799714201291*^9},
+ CellLabel->
+  "Out[113]//TableForm=",ExpressionUUID->"d2138a04-e672-4c42-b750-\
+233a44d990e5"]
+}, Open  ]]
+},
+WindowSize->{1893, 989},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+Magnification:>1.8 Inherited,
+FrontEndVersion->"12.3 for Microsoft Windows (64-bit) (2021\:5e747\:670823\
+\:65e5)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"6bab1769-fa2e-43aa-854f-cf1a20140265"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 884, 24, 143, "Input",ExpressionUUID->"62f7b6a8-c0fd-4c7e-95eb-fb7aae772bde"],
+Cell[1467, 48, 18192, 627, 346, "Output",ExpressionUUID->"d267387a-adc2-4688-92ce-4f2d934d9d54"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[19696, 680, 958, 26, 219, "Input",ExpressionUUID->"f852debb-7e64-4d3b-9280-bd30a4e6a8b8"],
+Cell[20657, 708, 20572, 633, 567, "Output",ExpressionUUID->"d078883a-c6b1-4c81-9c6c-e631146cda5d"]
+}, Open  ]],
+Cell[41244, 1344, 242, 4, 52, "Input",ExpressionUUID->"80f4599a-6f82-4749-a601-e2665d96576e"],
+Cell[CellGroupData[{
+Cell[41511, 1352, 600, 17, 79, "Input",ExpressionUUID->"7988f418-c9f1-43ab-b9a0-fdbdc997d767"],
+Cell[42114, 1371, 19490, 720, 3046, "Output",ExpressionUUID->"2a127920-aaa3-4649-9815-5fb4315d8071"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[61641, 2096, 825, 23, 79, "Input",ExpressionUUID->"6d49d664-ce3a-4a97-9dd1-feef8c4f5746"],
+Cell[62469, 2121, 18141, 626, 346, "Output",ExpressionUUID->"d2138a04-e672-4c42-b750-233a44d990e5"]
+}, Open  ]]
+}
+]
+*)
+
